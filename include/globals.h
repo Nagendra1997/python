@@ -97,3 +97,4 @@ extern INotify* n;
 #define ACTIVITY "activity"
 #define HAS_ACTIVITY "has_activity"
 
+

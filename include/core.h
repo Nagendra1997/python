@@ -53,12 +53,10 @@ PyObject *mesibo_py_reconnect_now(PyObject *self, PyObject *type_arg);
 PyObject *mesibo_py_set_debug(PyObject *self, PyObject *debug_args);
 
 PyObject *mesibo_py_set_uniqid(PyObject *self, PyObject *uniqid_obj);
-PyObject *mesibo_py_set_device(PyObject *self, PyObject *device_args);
-PyObject *mesibo_py_set_cpu(PyObject *self, PyObject *cpu_args);
+PyObject *mesibo_py_set_appname(PyObject *self, PyObject *device_args);
 PyObject *mesibo_py_set_accesstoken(PyObject *self, PyObject *PyAppToken);
 
 PyObject *mesibo_py_set_notify(PyObject *self, PyObject *notify_class_ref);
-PyObject *mesibo_py_set_appstore(PyObject *self, PyObject *appstore_args);
 PyObject *mesibo_py_set_bufferlen(PyObject *self, PyObject *buffer_args);
 PyObject *mesibo_py_set_network(PyObject *self, PyObject *network_args);
 

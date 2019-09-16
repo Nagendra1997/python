@@ -72,6 +72,7 @@ class MesiboNotify:
         ----------
         message_params: Message Parameters
         data : Message Data 
+        datalen : Length of message(string buffer or byte array)
         """
 
         return 1

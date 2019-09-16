@@ -66,3 +66,5 @@ void mesibo_py_log_param_message(tMessageParams* p);
 void mesibo_py_log_param_bundle(tMessageBundle* m);
 
 PyObject* mesibo_py_get_callableclass(PyObject* py_class);
+int  mesibo_py_get_cpu_family(const char * family_name);
+void mesibo_py_set_cpu_info(IMesibo* m_api);
