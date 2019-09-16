@@ -13,7 +13,7 @@ Building Mesibo Python Module requires the following software installed:
 
 Install the development packages for Python : `python` and `python-dev`
 
-Make sure that the Python package `distutils` is installed before continuing. For example, in Debian GNU/Linux, installing python-dev also installs distutils.
+Make sure that the Python package `setuptools` is installed before continuing. For example, in Debian GNU/Linux, installing python-dev also installs distutils.
 
 #### Debian/Ubuntu
 ```

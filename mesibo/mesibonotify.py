@@ -125,6 +125,7 @@ class MesiboNotify:
         Parameters
         ----------
         message_params: Message Paramters
-        location_params: Location
+        latitude: Location
+        longitude: Location
 
         """

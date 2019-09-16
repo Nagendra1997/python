@@ -62,7 +62,6 @@ void mesibo_py_init() {
   CNotify *n = new CNotify();
   m_api = query_mesibo("/tmp");
   n->set_api(m_api);
-  int set_cpu_info();
   m_api->set_notify(0, n, 1);
 
   mesibo_py_set_cpu_info(m_api);

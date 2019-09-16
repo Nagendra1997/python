@@ -61,6 +61,7 @@ typedef enum {
     MESIBO_CPU_FAMILY_MAX  /* do not remove */
 } mesibo_cpu_family;
 
+#define MESIBO_DEFAULT_EXPIRY 604800
 
 #include "utils.h"
 #include <Python.h>
@@ -203,7 +204,11 @@ void mesibo_py_get_param_messagedict(PyObject* py_dict, tMessageParams* p) {
   p->refid         = mesibo_py_get_param_ui64(py_dict, REFID);
   p->uid           = mesibo_py_get_param_ui32(py_dict, UID);
   p->groupid       = mesibo_py_get_param_ui32(py_dict, GROUPID);
-  p->expiry        = mesibo_py_get_param_i32(py_dict, EXPIRY);
+  
+  if (PyDict_Contains(py_dict, Py_BuildValue("s",EXPIRY)) == 0) //No expiry provided
+	  p->expiry = MESIBO_DEFAULT_EXPIRY ;
+  else
+	  p->expiry        = mesibo_py_get_param_i32(py_dict, EXPIRY);
   p->flag          = mesibo_py_get_param_ui32(py_dict, FLAG);
   p->when          = mesibo_py_get_param_ui64(py_dict, WHEN);
   p->retaints      = mesibo_py_get_param_ui64(py_dict, RETAINTS);
