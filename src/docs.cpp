@@ -271,12 +271,6 @@ PyDoc_STRVAR(setAnswerMode__doc__,
              "Parameters \n---------- \n"
              "lateconnect:int \n\n"
              "Set Answer Mode");
-PyDoc_STRVAR(setAppstore__doc__,
-             "set_appstore(stroreid,store) ->int \n\n"
-             "Parameters \n---------- \n"
-             "storeid:int \n"
-             "store: str \n\n"
-             "Set Appstore");
 PyDoc_STRVAR(setBufferLen__doc__,
              "set_bufferlen(len,empty) ->int \n\n"
              "Parameters \n---------- \n"
@@ -295,13 +289,6 @@ PyDoc_STRVAR(setCallProcessing__doc__,
              "callRejectStatus:int \n"
              "currentCallStatus:int \n"
              "Set Call Processing");
-PyDoc_STRVAR(setCpu__doc__,
-             "set_cpu(family,features,count) ->void \n\n"
-             "Parameters \n---------- \n"
-             "family:int \n"
-             "features: unsigned int \n"
-             "count: int \n\n"
-             "Set CPU");
 PyDoc_STRVAR(setAccessToken__doc__,
              "set_accesstoken(cookie) -> int \n\n"
              "Parameters \n---------- \n"
@@ -326,11 +313,11 @@ PyDoc_STRVAR(setDebug__doc__,
              "debugflags: unsigned int \n\n"
              "Set Debug");
 
-PyDoc_STRVAR(setDevice__doc__,
+PyDoc_STRVAR(setAppName__doc__,
              "set_appname(app_id) ->int\n\n"
              "Parameters \n---------- \n"
              "app_id: str \n\n"
-             "Set Device");
+             "Set the Package Name");
 PyDoc_STRVAR(setKey__doc__,
              "set_key(key,value) ->int \n\n"
              "Parameters \n---------- \n"

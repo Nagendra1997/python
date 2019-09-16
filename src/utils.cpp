@@ -47,6 +47,20 @@
 #define MESIBO_UINT32_MAX 0xffffffff
 #define MESIBO_UINT64_MAX 0xffffffffffffffff
 
+/* A list of valid values returned by mesibo_py_get_cpu_family().
+ * They describe the CPU Architecture of the current process.
+ */
+typedef enum {
+    MESIBO_CPU_FAMILY_UNKNOWN = 0,
+    MESIBO_CPU_FAMILY_ARM,
+    MESIBO_CPU_FAMILY_X86,
+    MESIBO_CPU_FAMILY_MIPS,
+    MESIBO_CPU_FAMILY_ARM64,
+    MESIBO_CPU_FAMILY_X86_64,
+    MESIBO_CPU_FAMILY_MIPS64,
+    MESIBO_CPU_FAMILY_MAX  /* do not remove */
+} mesibo_cpu_family;
+
 
 #include "utils.h"
 #include <Python.h>
@@ -406,4 +420,41 @@ PyObject* mesibo_py_get_callableclass(PyObject* py_class) {
                  mesibo_py_get_string(PyObject_Repr(py_class)));
     return NULL;
   }
+}
+
+int mesibo_py_get_cpu_family(const char * family_name){
+
+mesibo_cpu_family cpu_family;
+
+if(strncmp(family_name,"x86_64",6) == 0)
+  cpu_family = MESIBO_CPU_FAMILY_X86_64;
+else if(strncmp(family_name,"x86",3) == 0)
+  cpu_family = MESIBO_CPU_FAMILY_X86;
+
+else if (strncmp(family_name,"armv7",5) <= 0) //ARM7 or Lower are 32 bit
+  cpu_family = MESIBO_CPU_FAMILY_ARM;
+
+else if(strncmp(family_name,"armv8",5) >= 0) //ARM8 or Above are 64 bit
+  cpu_family = MESIBO_CPU_FAMILY_ARM64;
+else
+  cpu_family = MESIBO_CPU_FAMILY_UNKNOWN;
+
+
+return int(cpu_family);
+}
+
+
+void mesibo_py_set_cpu_info(IMesibo* m_api){
+  PyObject *platform_module = PyImport_ImportModule("platform");
+  PyObject *machine_name =
+      PyObject_CallMethod(platform_module, "machine", NULL);
+
+  PyObject* multiproc_module = PyImport_ImportModule("multiprocessing");
+  PyObject* num_cores = 
+      PyObject_CallMethod(multiproc_module,"cpu_count", NULL);
+
+  int family = mesibo_py_get_cpu_family(mesibo_py_get_string(machine_name));
+  int count  = PyLong_AsLong(num_cores);
+  DEBUG("family %d count %d \n", family, count);
+  m_api->set_cpu(family, 0, count);
 }

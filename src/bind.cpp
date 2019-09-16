@@ -199,8 +199,6 @@ static PyMethodDef Mesibo_methods[] = {
     {"set_answer_mode", (PyCFunction)mesibo_py_set_answer_mode, METH_VARARGS,
      setAnswerMode__doc__},
 
-    {"set_appstore", (PyCFunction)mesibo_py_set_appstore, METH_VARARGS,
-     setAppstore__doc__},
 
     {"set_bufferlen", (PyCFunction)mesibo_py_set_bufferlen, METH_VARARGS,
      setBufferLen__doc__},
@@ -211,7 +209,6 @@ static PyMethodDef Mesibo_methods[] = {
     {"set_callprocessing", (PyCFunction)mesibo_py_set_callprocessing,
      METH_VARARGS, setCallProcessing__doc__},
 
-    {"set_cpu", (PyCFunction)mesibo_py_set_cpu, METH_VARARGS, setCpu__doc__},
 
     {"set_accesstoken", (PyCFunction)mesibo_py_set_accesstoken,
      METH_VARARGS | METH_KEYWORDS, setAccessToken__doc__},
@@ -222,8 +219,8 @@ static PyMethodDef Mesibo_methods[] = {
     {"set_debug", (PyCFunction)mesibo_py_set_debug, METH_VARARGS,
      setDebug__doc__},
 
-    {"set_appname", (PyCFunction)mesibo_py_set_device, METH_VARARGS,
-     setDevice__doc__},
+    {"set_appname", (PyCFunction)mesibo_py_set_appname, METH_VARARGS,
+     setAppName__doc__},
 
     {"set_key", (PyCFunction)mesibo_py_set_key, METH_VARARGS, setKey__doc__},
 
