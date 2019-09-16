@@ -109,7 +109,8 @@ class MesiboListener(MesiboNotify):
         
 
 def send_text_message(to,message):
-        #api is the Mesibo Python API instance. Make sure the instance is initialised before you call API functions
+        #api is the Mesibo Python API instance. 
+        #Make sure the instance is initialised before you call API functions
         p = {}
         p['peer'] = to
         p['expiry'] = 3600
