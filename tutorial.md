@@ -124,7 +124,8 @@ In the previous section, we have used mesibo console to send a message. Now we w
 Invoke the following function anywhere from your code to send a text message. 
 ```python
 def send_text_message(to,message):
-        #api is the Mesibo Python API instance. Make sure the instance is initialised before you call API functions
+        #api is the Mesibo Python API instance. 
+        #Make sure the instance is initialised before you call API functions
         p = {}
         p['peer'] = to
         p['expiry'] = 3600
