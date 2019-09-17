@@ -128,7 +128,6 @@ def send_text_message(to,message):
         #Make sure the instance is initialised before you call API functions
         p = {}
         p['peer'] = to
-        p['expiry'] = 3600
         data = message
         api.send_message(p,api.random(),data)
 
