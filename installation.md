@@ -1,6 +1,12 @@
-# Mesibo for Python
 
-Mesibo Python API is a completely open-source real-time library which can be built and installed from source. The entire source code and installation details can be found at our GitHub repo  [Mesibo Python API](https://github.com/mesibo/python)
+---
+description: Mesibo for Python - Real-time Messaging API for Python
+keywords: mesibo, install, python, real-time
+title: Mesibo for Python - Real-time Messaging API for Python
+toc_max: 4
+---
+
+Mesibo Python API is an entirely open-source real-time library which can be built and installed from source. The entire source code and installation details can be found at our GitHub repo  [Mesibo Python API](https://github.com/mesibo/python)
 
 ### Platforms Supported 
 Currently the Mesibo Real-Time Python library is under-development and supports Linux,Mac and Raspberry Pi.
