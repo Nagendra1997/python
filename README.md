@@ -123,7 +123,7 @@ $ pip install mesibo -v
         
 If you get a run-time error like
 ```
-Unable to load: XXXX. Platform not supported. '
+Unable to load: XXXX. Platform not supported. 
 ```
 then mesibo library does not support this platform. Write to us at `support@mesibo.com` with your platform details, python version, installation logs, etc and we will help you out.
 
