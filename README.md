@@ -54,7 +54,7 @@ class PyMesiboListener(MesiboListener):
 
     def mesibo_on_messagestatus(self, msg_params):
         """Invoked when the status 
-        of an outgoing or sent message is changed. Statuses can be
+        of an outgoing or sent message is changed. msg_params.status can be
         sent, delivered, or read
         """
         print("## on_messagestatus", msg_params)
