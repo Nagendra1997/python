@@ -3,11 +3,11 @@
 This repo contains the source code for mesibo Real-Time Python API. mesibo Python Package is still **under-development**. However, it is completely functional. 
 
 ### What is mesibo?
-mesibo offers everything to make your app real-time and scalable. It's modular, lightweight and easy to integrate.
+mesibo offers everything to make your app real-time and scalable. It's modular, lightweight, and easy to integrate.
 
-mesibo supports almost all popular platforms and languages for you to quickly build your applications. Whether you are developing mobile apps (Android, iOS, Java, Objective-C, C++), web apps (Javascript), integrating with backend (Linux, MacOS, Windows, Python, C++) or creating cool devices using Raspberry Pi, mesibo has APIs for you.
+mesibo supports almost all popular platforms and languages for you to quickly build your applications. Whether you are developing mobile apps (Android, iOS, Java, Objective-C, C++), web apps (Javascript), integrating with backend (Linux, macOS, Windows, Python, C++), or creating cool devices using Raspberry Pi, mesibo has APIs for you.
 
-mesibo's high performance Python library enable you to interface your chat clients with various scientific computing and machine learning systems on your backend like TensorFlow, Matlab, Octave, NumPy etc to create a powerful chat experience.
+mesibo's high-performance Python library enables you to interface your chat clients with various scientific computing and machine learning systems on your backend like TensorFlow, Matlab, Octave, NumPy, etc to create a powerful chat experience.
 
 
 - **Website:** https://mesibo.com
@@ -21,7 +21,7 @@ mesibo's high performance Python library enable you to interface your chat clien
 
 ## Example
 
-Below are some examples of typical usage. For more examples, see the [examples](https://github.com/mesibo/python/tree/master/examples) directory on the github repo.
+Below are some examples of typical usage. For more examples, see the [examples](https://github.com/mesibo/python/tree/master/examples) directory on the GitHub repo.
 
 ### Sending and Receiving Messages
 ```python
