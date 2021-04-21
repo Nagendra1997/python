@@ -1,4 +1,4 @@
-## Mesibo Python SDK  [ BETA ]
+## Mesibo Python API  [ BETA ]
 
 This repo contains the source code for Mesibo Real-Time Python API. Mesibo Python Package is still **under-development**. However, it is completely functional. 
 
