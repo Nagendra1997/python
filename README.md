@@ -107,5 +107,24 @@ $ pip install mesibo
 ## Tutorial
 See [Write your First mesibo Enabled Application - Python](https://mesibo.com/documentation/tutorials/get-started/python/)
 
+## Installation
+See [Installing mesibo for Python](https://mesibo.com/documentation/install/python/) to learn about installation requirements before you continue.          
+```     
+$ pip install mesibo
+```
+## Tutorial
+See [Write your First mesibo Enabled Application - Python](https://mesibo.com/documentation/tutorials/get-started/python/)
+
+## Troubleshooting
+If you are facing issues installing the package, execute the following to print verbose logs. Raise a GitHub issue with the complete logs.
+```     
+$ pip install mesibo -v
+```
+        
+If you get a run-time error like
+```
+Unable to load: XXXX. Platform not supported. '
+```
+then mesibo library does not support this platform. Write to us at `support@mesibo.com` with your platform details, python version, installation logs, etc and we will help you out.
 
 
