@@ -20,7 +20,7 @@ Mesibo's high performance Python library enable you to interface your chat clien
 - Raspberry Pi
 
 ## Installation
-See [Installation Instructions for Mesibo Python Library](https://mesibo.com/documentation/install/python/) 
+See [Installation Mesibo for Python](https://mesibo.com/documentation/install/python/) 
 
 ## Tutorial
 See [Write your First mesibo Enabled Application - Python](https://mesibo.com/documentation/tutorials/get-started/python/)
