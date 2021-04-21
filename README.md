@@ -1,6 +1,6 @@
-## Mesibo Python API  [ BETA ]
+## Mesibo Python SDK  [ BETA ]
 
-This repo contains the source code for Mesibo Real-Time Python API. Mesibo Python library is still **under-development**. However, it is completely functional. 
+This repo contains the source code for Mesibo Real-Time Python API. Mesibo Python Package is still **under-development**. However, it is completely functional. 
 
 ### What is Mesibo?
 Mesibo offers everything to make your app real-time and scalable. It's modular, lightweight and easy to integrate.
