@@ -99,15 +99,6 @@ api.wait()
 ```
 
 ## Installation
-See [Installing mesibo for Python](https://mesibo.com/documentation/install/python/) to learn about installation requirements before you continue.
-```
-$ pip install mesibo
-```
-
-## Tutorial
-See [Write your First mesibo Enabled Application - Python](https://mesibo.com/documentation/tutorials/get-started/python/)
-
-## Installation
 See [Installing mesibo for Python](https://mesibo.com/documentation/install/python/) to learn about installation requirements before you continue.          
 ```     
 $ pip install mesibo
