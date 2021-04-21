@@ -19,6 +19,10 @@ mesibo's high performance Python library enable you to interface your chat clien
 - Mac OS
 - Raspberry Pi
 
+## Example
+
+Below are some examples of typical usage. For more examples, see the [examples](https://github.com/mesibo/python/tree/master/examples) directory on the github repo.
+
 ### Sending and Receiving Messages
 ```python
 from mesibo import Mesibo
