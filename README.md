@@ -6,15 +6,16 @@ mesibo supports almost all popular platforms and languages for you to quickly bu
 
 mesibo's high-performance Python library enables you to interface your chat clients with various scientific computing and machine learning systems on your backend like TensorFlow, Matlab, Octave, NumPy, etc to create a powerful chat experience.
 
-
 - **Website:** https://mesibo.com
 - **Documentation:** https://mesibo.com/documentation/
+- **Tutorials:** https://mesibo.com/documentation/tutorials/get-started
 
 ### Supported Platforms
+Mesibo Python Package is still under-development and supports the following platforms. However, it is completely functional.
 - CentOS / RedHat 7.x or above
 - Debian / Ubuntu
-- Mac OS
-- Raspberry Pi
+- Mac OS (In Progress)
+- Raspberry Pi (In Progress)
 
 ## Example
 Below are some examples of typical usage. For more examples, see the [examples](https://github.com/mesibo/python/tree/master/examples) directory on the GitHub repo.
@@ -80,7 +81,7 @@ listener = PyMesiboListener()
 api.add_listener(listener)
 
 # Set your AUTH_TOKEN obtained while creating the user 
-if(-1 == api.set_accesstoken(ACCESS_TOKEN)):
+if(Mesibo.RESULT_FAIL == api.set_accesstoken(ACCESS_TOKEN)):
     print("===> Invalid ACCESS_TOKEN: ", ACCESS_TOKEN)
     print("See https://mesibo.com/documentation/tutorials/get-started/")
     exit(1) 
@@ -100,18 +101,43 @@ send_one_to_one_message(api, "xxx", "Hello from Python!")
 api.wait()
 ```
 
-## Installation
-See [Installing mesibo for Python](https://mesibo.com/documentation/install/python/) to learn about installation requirements before you continue.
+## Installing using pip
+See [requirements](https://mesibo.com/documentation/install/python/#requirements) to learn about installation requirements before you continue.
 ```
-$ pip install mesibo
+$ sudo python -m pip install mesibo
 ```
+
+## Installing from source
+Alternatively, you can build and install the package by downloading the source code from the GitHub repo.
+
+Download the source files from [mesibo Python repo on GitHub](https://github.com/mesibo/python)
+```
+git clone https://github.com/mesibo/python.git
+```
+You will find the following directory structure:
+```
+|-- examples 
+|-- setup.py
+|-- src
+```
+
+To build the mesibo Python package from source
+```
+sudo python setup.py build 
+```
+
+To build and install the mesibo Python package from source
+```
+sudo python setup.py install
+```
+
 ## Tutorial
-See [Write your First mesibo Enabled Application - Python](https://mesibo.com/documentation/tutorials/get-started/python/)
+[Write your First mesibo Enabled Application - Python](https://mesibo.com/documentation/tutorials/get-started/python)
 
 ## Troubleshooting
 If you are facing issues installing the package, execute the following to print verbose logs. 
 ```
-$ pip install mesibo -v
+$ sudo python -m pip install mesibo -v
 ```
 Then, raise an issue [here](https://github.com/mesibo/python/issues) with the complete logs.
 
